@@ -42,7 +42,7 @@ void file_to_array(void* input_path, char** input_arr) {
   while ((read = getline(&line, &len, fp)) != -1) {
     char* field = input_arr[cnt];
     strcpy(field, line);
-    printf("%s", field);
+    //printf("%s", field);
     cnt++;
   }
 }

@@ -7,6 +7,7 @@
 
 #include "include/day1.h"
 #include "include/day2.h"
+#include "include/day3.h"
 
 char* solve(char** input_arr, int day, int part, int m, int n) {
   char* solution = malloc(sizeof(char)*1024);
@@ -22,6 +23,12 @@ char* solve(char** input_arr, int day, int part, int m, int n) {
         solution = day2_part1(input_arr, m, n);
       else
         solution = day2_part2(input_arr, m, n);
+      break;
+    case 3:
+      if (part == 1)
+        solution = day3_part1(input_arr, m, n);
+      else
+        solution = day3_part2(input_arr, m, n);
       break;
     
   }
