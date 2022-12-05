@@ -11,9 +11,13 @@ void menu_init() {
   printf("(11) day1 puzzle1\n");
   printf("(12) day1 puzzle2\n");
   printf("(21) day2 puzzle1\n");
-  printf("(22) day2 puzzle2\n\n");
+  printf("(22) day2 puzzle2\n");
   printf("(31) day3 puzzle1\n");
-  printf("(32) day3 puzzle2\n\n");
+  printf("(32) day3 puzzle2\n");
+  printf("(41) day4 puzzle1\n");
+  printf("(42) day4 puzzle2\n");
+  printf("(51) day5 puzzle1\n");
+  printf("(52) day5 puzzle2\n\n");
 }
 
 /*
@@ -40,6 +44,10 @@ int menu_getinput() {
       || day_and_puzzle == 22
       || day_and_puzzle == 31
       || day_and_puzzle == 32
+      || day_and_puzzle == 41
+      || day_and_puzzle == 42
+      || day_and_puzzle == 51
+      || day_and_puzzle == 52
       ) { return day_and_puzzle; }
 
   printf("puzzle does not exist!\n");

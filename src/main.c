@@ -8,6 +8,8 @@
 #include "include/day1.h"
 #include "include/day2.h"
 #include "include/day3.h"
+#include "include/day4.h"
+#include "include/day5.h"
 
 char* solve(char** input_arr, int day, int part, int m, int n) {
   char* solution = malloc(sizeof(char)*1024);
@@ -29,6 +31,18 @@ char* solve(char** input_arr, int day, int part, int m, int n) {
         solution = day3_part1(input_arr, m, n);
       else
         solution = day3_part2(input_arr, m, n);
+      break;
+    case 4:
+      if (part == 1)
+        solution = day4_part1(input_arr, m, n);
+      else
+        solution = day4_part2(input_arr, m, n);
+      break;
+    case 5:
+      if (part == 1)
+        solution = day5_part1(input_arr, m, n);
+      else
+        solution = day5_part2(input_arr, m, n);
       break;
     
   }
